@@ -1,13 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Press Start 2P', cursive; /* A pixelated font */
+  background-color: #221f3b; /* Dark background */
+  color: #f71735; /* Bright neon text color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 0 #ff79c6, 4px 4px 0 #bd93f9; /* Neon shadow */
+}
+
+input {
+  padding: 10px;
+  background-color: #44475a; /* Darker input background */
+  color: #50fa7b; /* Bright neon text color */
+  border: 3px solid #f1fa8c; /* Chunky yellow border */
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #6272a4; /* Purple button background */
+  color: #f8f8f2; /* Light text */
+  border: 3px solid #f1fa8c; /* Chunky yellow border */
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #5061d2; /* Darker list item background */
+  padding: 10px 20px;
+  border: 3px solid #f1fa8c; /* Chunky yellow border */
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+li button {
+  padding: 5px 10px; /* Smaller button for delete */
 }
