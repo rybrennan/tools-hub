@@ -1,0 +1,24 @@
+@import "~video-react/styles/scss/video-react";
+
+
+.buttonRestyle{
+    border-radius: 50% !important;
+    width: 6.25rem !important;
+    height: 6.25rem !important;
+    background-color: transparent !important;
+    margin-top: -3.125rem !important;
+    margin-left: -3.125rem !important;
+    border: none !important;
+    background-image: url('../../assets/images/play-btn.png') !important;
+    font-size: 0px !important;
+    &::before{
+        display: none;
+    }
+    @media screen and (max-width:767px){
+        background-image: url('../../assets/images/mobile-play-btn.png') !important;
+        width: 2.625rem !important;
+        height: 2.625rem !important;
+        margin-top: -1.3125rem !important;
+        margin-left: -1.3125rem !important;
+    }
+}

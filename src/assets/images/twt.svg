@@ -1,0 +1,27 @@
+<svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="27" fill="#888888"/>
+<g id="Homepage" clip-path="url(#clip0_1_5)">
+<rect width="1440" height="1235" transform="translate(-184 -1105)" fill="white"/>
+<path id="Rectangle 195" d="M-184 -339C378.355 -339 693.645 -339 1256 -339V130H-184V-339Z" fill="#050720"/>
+<g id="Frame 1000001341">
+<g id="Frame 1000001339">
+<g id="Frame 1000001338">
+<g id="Frame 7">
+<g id="ri:twitter-x-line">
+<path id="Vector" d="M10.4462 3.62146H3.4751L11.701 14.5899L3.92324 23.5388H6.56228L12.9239 16.2202L18.4131 23.5388H25.3842L16.8117 12.1082L24.1891 3.62146H21.5501L15.5888 10.479L10.4462 3.62146ZM19.409 21.5471L7.45856 5.61319H9.4503L21.4007 21.5471H19.409Z" fill="url(#paint0_linear_1_5)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_5" x1="-5.69932" y1="-27.3862" x2="39.9242" y2="-20.5109" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE00DD"/>
+<stop offset="1" stop-color="#00CCE3"/>
+</linearGradient>
+<clipPath id="clip0_1_5">
+<rect width="1440" height="1235" fill="white" transform="translate(-184 -1105)"/>
+</clipPath>
+</defs>
+</svg>

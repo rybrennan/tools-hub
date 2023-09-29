@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+@import "../src/assets/scss/variable.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primaryfont;
+}
+.self-container {
+  @media screen and (max-width: 767.99px) {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 71.25rem !important;
+  }
+}
+.home-page {
+  background-color: #ffffff;
+  .navbar-nav {
+    a {
+      color: rgba(17, 17, 17, 0.7);
+      &.active,
+      &:hover {
+        color: rgba(17, 17, 17, 1);
+      }
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url("./assets/images/hamburger-home.svg");
+  }
+  .btn-wrap {
+    .btn {
+      background-color: #fff;
+      &:hover {
+        background: linear-gradient(
+          92deg,
+          #e10de4 0%,
+          #02e1ff 99.75%
+        ) !important;
+        color: #fff !important;
+      }
+      &.active {
+        color: $dark !important;
+        &:hover {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #050620;
+  }
+}
+
+.other-pages {
+  background-color: #07062e;
+  .navbar-nav {
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      &.active,
+      &:hover {
+        color: rgba(255, 255, 255, 1) !important;
+      }
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url("./assets/images/hamburger.svg");
+  }
+
+  .btn-wrap {
+    .btn {
+      background-color: #07062e;
+      color: #fff;
+      &:hover {
+        background: linear-gradient(
+          92deg,
+          #e10de4 0%,
+          #02e1ff 99.75%
+        ) !important;
+      }
+    }
+  }
+}
+
+.grident-btn {
+  background: linear-gradient(92deg, #e10de4 0%, #02e1ff 99.75%) !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 8.75rem;
+}
+
+.title {
+  font-family: $headingfont;
+  font-weight: 600;
+}
