@@ -44,7 +44,7 @@ const Product = () => {
             <Row>
               <Col>
                 <div className="text-center video-inner">
-                  <a className="ryter-logo-container">
+                  <a href="https://rytr.me?via=the-ai-tools-hub" className="ryter-logo-container">
                     <img src="https://storage.googleapis.com/rytr-me/public/image/logo.svg" style={{ width: '4rem', height: '4rem' }}></img>
                     Ryter
                   </a>
@@ -56,7 +56,7 @@ const Product = () => {
             </Row>
           </Container>
           <div className="d-none d-md-flex align-items-center justify-content-center action-cta">
-            <button className="grident-btn" style={{ fontSize: '25px' }} onClick={() => window.location.href="https://rytr.me?via=the-ai-tools-hub"}>Explore Ryter</button>
+            <button className="grident-btn" style={{ fontSize: '25px' }} onClick={() => window.location.href = "https://rytr.me?via=the-ai-tools-hub"}>Explore Ryter</button>
           </div>
         </div>
         {/* <div className="customers-wrap">

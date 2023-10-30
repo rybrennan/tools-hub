@@ -1,22 +1,32 @@
-import React from 'react';
-import { Player, BigPlayButton } from 'video-react';
+import React, { useRef } from 'react';
 import './video.scss';
 import VideoPoster from '../../assets/images/video-poster.png';
+import { Container } from 'react-bootstrap';
 
-export default props => {
+const VideoComponent = () => {
+  const videoRef = useRef(null);
+
+  const handlePlayClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+ 
   return (
-    // <Player src="https://toolshubbucket.s3.us-west-1.amazonaws.com/Rytr+UGC+(With+Music).MP4"  className="customVideoPlayer" >
-    // </Player>
-    <video
-      controls
-      width="100%"
-      height="540"
-      // poster={VideoPoster}
-      className="customVideoPlayer"
-      autoPlay
-    >
-      <source src="https://toolshubbucket.s3.us-west-1.amazonaws.com/Rytr+UGC+(With+Music).MP4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div className="video-container">
+      <video
+        ref={videoRef}
+        controls
+        className="customVideoPlayer"
+        autoPlay
+      >
+        <source src="https://toolshubbucket.s3.us-west-1.amazonaws.com/Rytr+UGC+(With+Music).MP4" type="video/mp4" />
+      </video>
+      <div className="big-play-button" onClick={handlePlayClick}>
+        ▶
+      </div>
+    </div>
   );
 };
+
+export default VideoComponent;
