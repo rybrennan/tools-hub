@@ -44,6 +44,10 @@ const Product = () => {
             <Row>
               <Col>
                 <div className="text-center video-inner">
+                  <a className="ryter-logo-container">
+                    <img src="https://storage.googleapis.com/rytr-me/public/image/logo.svg" style={{ width: '4rem', height: '4rem' }}></img>
+                    Ryter
+                  </a>
                   <h3 className="title">A better, 10x faster way to write</h3>
                   <h3 className="dynamic-subtitle" style={{ color: subtitleColor }}>{contentArray[currentIndex]}</h3>
                   <Video />
@@ -52,10 +56,10 @@ const Product = () => {
             </Row>
           </Container>
           <div className="d-none d-md-flex align-items-center justify-content-center action-cta">
-            <button className="grident-btn">Explore Ryter</button>
+            <button className="grident-btn" style={{ fontSize: '25px' }} onClick={() => window.location.href="https://rytr.me?via=the-ai-tools-hub"}>Explore Ryter</button>
           </div>
         </div>
-        <div className="customers-wrap">
+        {/* <div className="customers-wrap">
           <div className="customer-pattern-bottom"></div>
           <Container className="self-container">
             <Row>
@@ -70,7 +74,7 @@ const Product = () => {
                   nec aliquam erat turpis.
                 </p>
 
-                {/* <div className="customers-review">
+                <div className="customers-review">
                   <div className="customer-pattern"></div>
                   <div className="customers-review-box">
                     <div className="customers-review-top">
@@ -152,17 +156,17 @@ const Product = () => {
                       <button>Read More</button>
                     </div>
                   </div>
-                </div> */}
-                {/* <div className="slider"> */}
-                  {/* <MobileSlider /> */}
-                {/* </div> */}
-                {/* <div className="d-none d-md-flex align-items-center justify-content-center">
+                </div>
+                <div className="slider">
+                <MobileSlider />
+                </div>
+                <div className="d-none d-md-flex align-items-center justify-content-center">
                   <button className="grident-btn">Show All</button>
-                </div> */}
+                </div>
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         {/* <div className="sponsorship-wrap">
           <div className="sponsorship-shadow"></div>
           <Container className="self-container">

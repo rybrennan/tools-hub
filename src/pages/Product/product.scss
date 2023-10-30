@@ -280,5 +280,21 @@
 
 
   .action-cta {
-    margin-top: 60px;  /* Adjust the value as needed */
+    margin-top: 50px;  /* Adjust the value as needed */
+  }
+
+
+  .ryter-logo-container {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    font-size: 4rem;
+    padding-right: 30px;;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin: 0px auto;
   }
