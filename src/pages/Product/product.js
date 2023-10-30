@@ -18,7 +18,7 @@ const Product = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const contentArray = ["emails", "SEO titles", "story plots", "taglines & headlines", "blogs", "product descriptions", "YouTube descriptions", "portfolio bio", "interview questions", "Facebook Ads", "Instagram posts", "profile bio"];  // Add more if needed
+  const contentArray = ["emails", "SEO titles", "story plots", "taglines & headlines", "blogs", "product descriptions", "YouTube descriptions", "portfolio bios", "interview questions", "Facebook Ads", "Instagram posts", "profile bio"];  // Add more if needed
   const subtitleColor = currentIndex % 2 === 0 ? "#02e1ff" : "#e10de4";
   // Step 2: Set an interval to update the content index every 3 seconds
   useEffect(() => {
@@ -51,6 +51,9 @@ const Product = () => {
               </Col>
             </Row>
           </Container>
+          <div className="d-none d-md-flex align-items-center justify-content-center action-cta">
+            <button className="grident-btn">Explore Ryter</button>
+          </div>
         </div>
         <div className="customers-wrap">
           <div className="customer-pattern-bottom"></div>
@@ -67,7 +70,7 @@ const Product = () => {
                   nec aliquam erat turpis.
                 </p>
 
-                <div className="customers-review">
+                {/* <div className="customers-review">
                   <div className="customer-pattern"></div>
                   <div className="customers-review-box">
                     <div className="customers-review-top">
@@ -149,18 +152,18 @@ const Product = () => {
                       <button>Read More</button>
                     </div>
                   </div>
-                </div>
-                <div className="slider">
-                  <MobileSlider />
-                </div>
-                <div className="d-none d-md-flex align-items-center justify-content-center">
+                </div> */}
+                {/* <div className="slider"> */}
+                  {/* <MobileSlider /> */}
+                {/* </div> */}
+                {/* <div className="d-none d-md-flex align-items-center justify-content-center">
                   <button className="grident-btn">Show All</button>
-                </div>
+                </div> */}
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="sponsorship-wrap">
+        {/* <div className="sponsorship-wrap">
           <div className="sponsorship-shadow"></div>
           <Container className="self-container">
             <Row>
@@ -195,7 +198,7 @@ const Product = () => {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
