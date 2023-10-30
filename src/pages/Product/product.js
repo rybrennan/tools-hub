@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Video from "../../components/video/Video";
@@ -15,6 +15,24 @@ import ProfileOne from "../../assets/images/profile1.jpg";
 import "./product.scss";
 
 const Product = () => {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const contentArray = ["emails", "SEO titles", "story plots", "taglines & headlines", "blogs", "product descriptions", "YouTube descriptions", "portfolio bio", "interview questions", "Facebook Ads", "Instagram posts", "profile bio"];  // Add more if needed
+  const subtitleColor = currentIndex % 2 === 0 ? "#02e1ff" : "#e10de4";
+  // Step 2: Set an interval to update the content index every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % contentArray.length);
+    }, 3000);
+
+    // Cleanup the interval when the component is unmounted
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
   return (
     <>
       <Header />
@@ -26,11 +44,8 @@ const Product = () => {
             <Row>
               <Col>
                 <div className="text-center video-inner">
-                  <h3 className="title">Emphasizing the primary benefit</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Pretium aenean
-                    egestas blandit gravida. Ac id feugiat amet consequat.{" "}
-                  </p>
+                  <h3 className="title">A better, 10x faster way to write</h3>
+                  <h3 className="dynamic-subtitle" style={{ color: subtitleColor }}>{contentArray[currentIndex]}</h3>
                   <Video />
                 </div>
               </Col>
